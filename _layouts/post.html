@@ -12,13 +12,13 @@ layout: default
 <div class="row" style="padding: 0 0 100px 0">
     <ul style="list-style-type:none">
       {% if page.previous.url %}
-      <li style="float:left">
-        <h4><font style="color:#3f4e85"><a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a></font></h4>
+      <li>
+        <h4 style="float:left"><font style="color:#3f4e85"><a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a></font></h4>
       </li>
       {% endif %}
       {% if page.next.url %}
-      <li style="float:right">
-        <h4><font style="color:#3f4e85"><a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a></font></h4>
+      <li>
+        <h4 style="float:right"><font style="color:#3f4e85"><a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a></font></h4>
       </li>
       {% endif %}
     </ul>
