@@ -13,12 +13,12 @@ layout: default
     <ul style="list-style-type:none">
       {% if page.previous.url %}
       <li style="float:left">
-        <h3><a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a></h3>
+        <h4><a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a></h4>
       </li>
       {% endif %}
       {% if page.next.url %}
       <li style="float:right">
-        <h3><a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a></h3>
+        <h4><a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a></h4>
       </li>
       {% endif %}
     </ul>
