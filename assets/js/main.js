@@ -85,7 +85,7 @@
 				$(
 					'<div id="titleBar">' +
 						'<a href="#header" class="toggle"></a>' +
-						'<span class="title">' + $('#logo').html().replace('\n', " ") + '</span>' +
+						'<span class="title">' + $('#logo').html().replace('<br>', " ") + '</span>' +
 					'</div>'
 				)
 					.appendTo($body);
