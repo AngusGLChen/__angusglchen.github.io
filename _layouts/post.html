@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <div style="padding: 0 0 100px 0">
-    <ul style="list-style-type:none">
+    <ul class="pager" style="list-style-type:none">
       {% if page.previous.url %}
       <li>
         <h3 style="float:left"><a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a></h4>
