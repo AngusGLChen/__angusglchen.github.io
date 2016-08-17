@@ -1,4 +1,6 @@
 name: Guanliang Chen
 markdown: kramdown
 
+gems: - jekyll-sitemap
+
 permalink: /blog/:year/:month/:day/:title
