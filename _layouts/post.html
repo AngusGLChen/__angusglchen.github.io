@@ -10,26 +10,16 @@ layout: default
 </div>
 
 <div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    <ul class="pager blog-pager" style="list-style-type:none">
+    <ul style="list-style-type:none">
       {% if page.previous.url %}
-      <li class="previous" style="float:left">
+      <li style="float:left">
         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
       </li>
       {% endif %}
       {% if page.next.url %}
-      <li class="next" style="float:right">
+      <li style="float:right">
         <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
       </li>
       {% endif %}
     </ul>
-  </div>
 </div>
-
-{% if page.comments %}
-<div class="row disqus-comments">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    {% include disqus.html %}
-  </div>
-</div>
-{% endif %}
