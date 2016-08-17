@@ -1,1 +1,1 @@
-# Guanliang Chen's Homepage
+Guanliang Chen's academic homepage
