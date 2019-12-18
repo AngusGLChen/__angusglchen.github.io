@@ -2,12 +2,13 @@ GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.5)
+    jekyll-paginate (1.1.0)
     mini_portile2 (2.1.0)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
-    rack (1.6.4)
+    rack (1.6.12)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -26,8 +27,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jekyll-paginate
   nokogiri
-  rack (~> 1.1)
+  rack (~> 1.6)
   rspec
 
 BUNDLED WITH
